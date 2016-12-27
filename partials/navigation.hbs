@@ -1,0 +1,17 @@
+<div>
+    <div class="avatar-sidebar">
+        <img width="90" height="90" alt="Cecil's avatar" class="post-avatar" src="{{asset "img/avatar-small.png"}}">
+    </div>
+    <div class="nav-sidebar">
+        <ul>
+            {{#foreach navigation}}
+                <li role="presentation"><a class="pure-button" href="{{url absolute="true"}}">{{label}}</a></li>
+            {{/foreach}}
+        </ul>
+        {{#if @labs.subscribers}}
+            <a class="subscribe-button" href="{{@blog.url}}/subscribe/">Subscribe</a>
+        {{else}}
+            <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
+        {{/if}}
+    </div>        
+</div>
