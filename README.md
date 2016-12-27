@@ -11,3 +11,7 @@ Used on the following blog: [https://devlaundry.com](https://devlaundry.com)
 ## Deploy
 
 Deploy to the themes directory of Ghost: Ghost-0.11.3\content\themes
+
+
+## Dev environment
+Account: ghost@test.com

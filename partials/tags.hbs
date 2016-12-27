@@ -1,0 +1,10 @@
+<section>
+    <h6>Tags</h6>
+    {{#get "tags" limit="all"}}
+        {{#foreach tags}}
+            <a href="{{url}}" class="" title="{{name}}" >
+                <i class="mdi mdi-tag"></i>  {{name}}
+            </a>
+        {{/foreach}}
+    {{/get}}
+</section>
