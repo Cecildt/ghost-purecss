@@ -18,10 +18,10 @@
 
     {{!-- Styles'n'Scripts --}}    
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:700,400" />
-    <link rel="stylesheet" type="text/css" href="//cdn.cecilblog.com/assets/css/purecss/pure-min.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.cecilblog.com/assets/css/purecss/grids-responsive-min.css" />
+    <link rel="stylesheet" type="text/css" href="//cdncontent.blob.core.windows.net/assets/css/purecss/pure-min.css" integrity="sha384-BbLThY29e2Lxd5NKnh13AC4VBSkumR3Te+ndRZgLMp0tTIuxMSKoa7dO+xhCG52l" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="//cdncontent.blob.core.windows.net/assets/css/purecss/grids-responsive-min.css" integrity="sha384-8BK/hokcTrJkRpMixnghPJPvSli9xqXrxw41BaO407yxnTpKuuY5iVy89mA0eRRC" crossorigin="anonymous"/>
     <link rel="stylesheet" type="text/css" href="{{asset "css/blog.css"}}" />
-    <link rel="stylesheet" type="text/css" href="//cdn.cecilblog.com/assets/css/prism.css" />
+    <link rel="stylesheet" type="text/css" href="//cdncontent.blob.core.windows.net/assets/css/prism.css" integrity="sha256-1zcKGhXFiNVoLrQKsG0HlDPXf11P9E3qJ/jn7LIeoAo= sha384-Ikj4mlJKoeHInYAdoJja8Itmx+0FEr/NvBoqLskyPdZ4x496rLaG/Gph7oa5czQl sha512-54+tJX3ULdrZBgUe8cXE7NxwxzRZADl+wNdxicRG8sdURESEyvrfycQ6O3Rw1tejIY1QA5RSzszdQoZakv6AYw==" crossorigin="anonymous" />
 
     {{!-- Ghost outputs important style and meta data with this tag --}}
     {{ghost_head}}
@@ -38,7 +38,7 @@
             {{{body}}}
             {{> tags}}
             <a id="scroll-top" href="#top" title="Back to Top" class="go-top-button">
-                <img src="{{asset "img/arrow-up-bold.svg"}}" alt="Up">
+                <img src="{{asset "img/arrow-up-bold.svg"}}" alt="Up" height="24" width="24">
             </a>
             {{!-- The tiny footer at the very bottom --}}
             <footer class="site-footer clearfix">
@@ -52,13 +52,13 @@
     </div>    
 
     {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
-    <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="//cdncontent.blob.core.windows.net/assets/js/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8= sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7 sha512-U6K1YLIFUWcvuw5ucmMtT9HH4t0uz3M366qrF5y4vnyH6dgDzndlcGvH/Lz5k8NFh80SN95aJ5rqGZEdaQZ7ZQ==" crossorigin="anonymous"></script>
     {{!-- Ghost outputs important scripts and data with this tag --}}
     {{ghost_foot}}
     {{!-- Fitvids makes video embeds responsive and awesome --}}
-    <script type="text/javascript" src="//cdn.cecilblog.com/assets/js/jquery.fitvids.js"></script>
-    <script type="text/javascript" src="//cdn.cecilblog.com/assets/js/toc.min.js"></script>
-    <script type="text/javascript" src="//cdn.cecilblog.com/assets/js/prism.js"></script>
+    <script type="text/javascript" src="//cdncontent.blob.core.windows.net/assets/js/jquery.fitvids.js" integrity="sha256-z1Nmfc9MKQxCtlIVTyiAmBzNneWT1dGEHMAneDQI0QE= sha384-LbM+OJR9yNYLhE1kBdQUvrAhQXsPvlu7OEWaouyHbsQEWmusRMQjJ6C1WF4TYDVq sha512-dqX7ipRvjVvgJl0RPSYiTqGkxXd8nchnE2fuyumVdQLr+dtB4JA6wRyd81R4EW0nuzmTdMKzfjgjZ27I1DF8Ew==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdncontent.blob.core.windows.net/assets/js/toc.min.js" integrity="sha256-AkuRoDIKC0sWTphEetcz6r2wpBOuLWn8Ges+/xUAKJ8= sha384-69zxoAYYl+eO8bWFEL/NNWVgXZuCHPXJc22DBRsGAVh4ReF3whE0X9iwK7N2esk8 sha512-jULypVPYzvDx/CNx+tICDrgzcSsVLXi5rXkNOBx+a/Og4oB9boFkYL403jrlaVXeOubqeilPWaVpzEOthqwoYQ==" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdncontent.blob.core.windows.net/assets/js/prism.js" integrity="sha256-JakwjU1ca3F6YlsfGaKm69TbrFitNgQogorKaQ0fn5Q= sha384-EtLE9D9LGDuCJKfNeF+u5bIO5x1k/inhql18DYsYDSlxh4DLjWnU53DcVDo2irgP sha512-CpEqlg9F+UAmgEh4ePVjBCSF1Ztc2QKE6eo8w4qP5dxcL2XDhNvCH4J+E3sywHuw3FWQWkG5eAnuc4MXVHDLmQ==" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
 </body>
