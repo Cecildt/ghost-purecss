@@ -18,6 +18,7 @@ body {
     font-size: 1.8rem;
     line-height: 1.75em;
     color: #3A4145;
+    font-feature-settings: 'kern' 1;
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
     -o-font-feature-settings: 'kern' 1;
@@ -35,6 +36,7 @@ body {
 
 h1, h2, h3,
 h4, h5, h6 {
+    font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
     -o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
@@ -83,6 +85,7 @@ a:hover {
 }
 
 p, ul, ol, dl {
+    font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
     -webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
     -moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
     -o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
