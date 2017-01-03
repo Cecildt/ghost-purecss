@@ -21,20 +21,25 @@
     <link rel="stylesheet" type="text/css" href="{{asset "css/purecss/pure-min.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/purecss/grids-responsive-min.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "css/blog.css"}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset "css/prism.css"}}" />
 
     {{!-- Ghost outputs important style and meta data with this tag --}}
     {{ghost_head}}
 </head>
 <body>
     <div class="pure-g">
-        <div class="sidebar pure-u-1 pure-u-md-1-4">
+        <div class="sidebar pure-u-1 pure-u-md-1-5">
             {{!-- The blog navigation links --}}
             {{navigation}}
         </div>
-        <div class="content pure-u-1 pure-u-md-3-4">
+        <div class="content pure-u-1 pure-u-md-4-5">
+            <div id="top"></div>
             {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
             {{{body}}}
-
+            {{> tags}}
+            <a id="scroll-top" href="#top" title="Back to Top" class="go-top-button">
+                <img src="{{asset "img/arrow-up-bold.svg"}}" alt="Up">
+            </a>
             {{!-- The tiny footer at the very bottom --}}
             <footer class="site-footer clearfix">
                 <section class="copyright">
@@ -44,8 +49,7 @@
                 <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
             </footer>
         </div>
-    </div>
-    {{> tags}}
+    </div>    
 
     {{!-- jQuery needs to come before `{{ghost_foot}}` so that jQuery can be used in code injection --}}
     <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.min.js"></script>
@@ -53,7 +57,8 @@
     {{ghost_foot}}
     {{!-- Fitvids makes video embeds responsive and awesome --}}
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
-    {{!-- The main JavaScript file for Casper --}}
+    <script type="text/javascript" src="{{asset "js/toc.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "js/prism.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
 </body>
